@@ -1,4 +1,4 @@
-import { WhatsAppIcon, TelegramIcon } from './navbar'
+import { WhatsAppIcon, TelegramIcon, InstagramIcon } from './navbar'
 
 interface CTASectionProps {
   title?: string
@@ -19,7 +19,7 @@ export function CTASection({
           <p className="text-muted-foreground leading-relaxed mb-8 text-sm sm:text-base">
             {subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a
               href="https://wa.me/919318336747"
               target="_blank"
@@ -38,6 +38,15 @@ export function CTASection({
               <TelegramIcon size={18} />
               Telegram Enquiry
             </a>
+            <a
+              href="https://www.instagram.com/tradeverse_city/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-bold text-sm sm:text-base px-8 py-3.5 rounded-lg hover:text-gold hover:border-gold transition-colors"
+            >
+              <InstagramIcon size={18} />
+              Instagram
+            </a>
           </div>
         </div>
       </div>
@@ -51,7 +60,7 @@ export function InlineCTA() {
       <p className="text-sm text-muted-foreground mb-4 text-center">
         For complete course details, fees, schedules, enrollment information, and mentorship guidance, contact Tradeverse City on WhatsApp.
       </p>
-      <div className="flex flex-col sm:flex-row gap-3 justify-center">
+      <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
         <a
           href="https://wa.me/919318336747"
           target="_blank"
@@ -67,6 +76,14 @@ export function InlineCTA() {
           className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
         >
           <TelegramIcon /> Telegram Enquiry
+        </a>
+        <a
+          href="https://www.instagram.com/tradeverse_city/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-6 py-2.5 rounded-md hover:text-gold hover:border-gold transition-colors"
+        >
+          <InstagramIcon size={16} /> @tradeverse_city
         </a>
       </div>
     </div>
