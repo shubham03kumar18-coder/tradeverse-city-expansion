@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  --font-heading: var(--font-serif);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+  /* Primary: Deep Black */
+  --background: #0a0a0a;
+  --foreground: #f5f0e8;
+  /* Cards: Slightly lighter black */
+  --card: #111111;
+  --card-foreground: #f5f0e8;
+  --popover: #161616;
+  --popover-foreground: #f5f0e8;
+  /* Gold as primary accent */
+  --primary: #d4af37;
+  --primary-foreground: #0a0a0a;
+  /* Secondary: Dark charcoal */
+  --secondary: #1a1a1a;
+  --secondary-foreground: #f5f0e8;
+  /* Muted */
+  --muted: #1e1e1e;
+  --muted-foreground: #8a8070;
+  /* Accent gold */
+  --accent: #d4af37;
+  --accent-foreground: #0a0a0a;
+  --destructive: #e53e3e;
+  --border: #2a2520;
+  --input: #1e1a16;
+  --ring: #d4af37;
+  /* Gold palette */
+  --gold: #d4af37;
+  --gold-light: #f0d060;
+  --gold-dark: #9a7d1c;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans bg-background;
+  }
+}
+
+/* Gold text utility */
+.text-gold {
+  color: var(--gold);
+}
+.text-gold-light {
+  color: var(--gold-light);
+}
+.bg-gold {
+  background-color: var(--gold);
+}
+.border-gold {
+  border-color: var(--gold);
+}
+
+/* Gold shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #d4af37 0%, #f0d060 40%, #d4af37 60%, #9a7d1c 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Dropdown nav */
+.nav-dropdown {
+  display: none;
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+  display: block;
+}
