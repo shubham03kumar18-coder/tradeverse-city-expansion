@@ -98,9 +98,9 @@ export function Navbar() {
             <Image
               src="/tradeverse-logo.png"
               alt="Tradeverse City Logo"
-              width={40}
-              height={40}
-              className="rounded-sm"
+              width={48}
+              height={48}
+              className="rounded-full"
             />
             <div className="hidden sm:block">
               <div className="text-base font-bold font-serif text-gold leading-tight tracking-wide">
@@ -130,7 +130,7 @@ export function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/message/your-whatsapp"
+              href="https://wa.me/919318336747"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gold text-background font-semibold text-sm px-4 py-2 rounded-md hover:bg-gold-light transition-colors"
@@ -199,15 +199,15 @@ export function Navbar() {
 
             <div className="pt-3 flex flex-col gap-2">
               <a
-                href="https://wa.me/message/your-whatsapp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-gold text-background font-semibold text-sm px-4 py-2.5 rounded-md"
-              >
-                <WhatsAppIcon /> WhatsApp Enquiry
-              </a>
-              <a
-                href="https://t.me/your-telegram"
+              href="https://wa.me/919318336747"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-gold text-background font-semibold text-sm px-4 py-2.5 rounded-md"
+            >
+              <WhatsAppIcon /> WhatsApp Enquiry
+            </a>
+            <a
+              href="https://t.me/+919318336747"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-4 py-2.5 rounded-md"

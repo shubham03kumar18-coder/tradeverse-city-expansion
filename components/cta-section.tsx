@@ -21,7 +21,7 @@ export function CTASection({
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/message/your-whatsapp"
+              href="https://wa.me/919318336747"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-gold text-background font-bold text-sm sm:text-base px-8 py-3.5 rounded-lg hover:opacity-90 transition-opacity shadow-lg"
@@ -30,7 +30,7 @@ export function CTASection({
               WhatsApp Enquiry
             </a>
             <a
-              href="https://t.me/your-telegram"
+              href="https://t.me/+919318336747"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-bold text-sm sm:text-base px-8 py-3.5 rounded-lg hover:opacity-90 transition-opacity"
@@ -53,7 +53,7 @@ export function InlineCTA() {
       </p>
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <a
-          href="https://wa.me/message/your-whatsapp"
+          href="https://wa.me/919318336747"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 bg-gold text-background font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
@@ -61,7 +61,7 @@ export function InlineCTA() {
           <WhatsAppIcon /> WhatsApp Enquiry
         </a>
         <a
-          href="https://t.me/your-telegram"
+          href="https://t.me/+919318336747"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"

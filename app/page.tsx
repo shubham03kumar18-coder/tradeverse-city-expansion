@@ -74,7 +74,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/message/your-whatsapp"
+                href="https://wa.me/919318336747"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-gold text-background font-bold text-base px-8 py-4 rounded-lg hover:opacity-90 transition-opacity shadow-xl"

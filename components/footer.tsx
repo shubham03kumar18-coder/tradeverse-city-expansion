@@ -37,7 +37,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image src="/tradeverse-logo.png" alt="Tradeverse City" width={44} height={44} className="rounded-sm" />
+              <Image src="/tradeverse-logo.png" alt="Tradeverse City" width={52} height={52} className="rounded-full" />
               <div>
                 <div className="font-serif font-bold text-gold text-lg leading-tight">Tradeverse City</div>
                 <div className="text-[10px] text-muted-foreground tracking-widest uppercase">Learn | Plan | Trade | Profit</div>
@@ -48,20 +48,20 @@ export function Footer() {
             </p>
             <div className="flex flex-col gap-2">
               <a
-                href="https://wa.me/message/your-whatsapp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gold text-background font-semibold text-sm px-4 py-2.5 rounded-md w-fit hover:opacity-90 transition-opacity"
-              >
-                <WhatsAppIcon /> WhatsApp Us
-              </a>
-              <a
-                href="https://t.me/your-telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-4 py-2.5 rounded-md w-fit hover:opacity-90 transition-opacity"
-              >
-                <TelegramIcon /> Telegram Channel
+              href="https://wa.me/919318336747"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gold text-background font-semibold text-sm px-4 py-2.5 rounded-md w-fit hover:opacity-90 transition-opacity"
+            >
+              <WhatsAppIcon /> WhatsApp Us
+            </a>
+            <a
+              href="https://t.me/+919318336747"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-secondary border border-border text-foreground font-semibold text-sm px-4 py-2.5 rounded-md w-fit hover:opacity-90 transition-opacity"
+            >
+              <TelegramIcon /> Telegram Channel
               </a>
             </div>
           </div>
@@ -104,15 +104,14 @@ export function Footer() {
             For complete course details, fees, schedules, enrollment information, and mentorship guidance, contact Tradeverse City on WhatsApp.
           </p>
           <div className="flex items-center gap-4">
-            <a href="https://instagram.com/your-handle" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
-              <InstagramIcon size={18} />
-              <span className="sr-only">Instagram</span>
+            <a href="tel:+919318336747" className="text-muted-foreground hover:text-gold transition-colors text-xs font-medium">
+              +91 93183 36747
             </a>
-            <a href="https://wa.me/message/your-whatsapp" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
+            <a href="https://wa.me/919318336747" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
               <WhatsAppIcon size={18} />
               <span className="sr-only">WhatsApp</span>
             </a>
-            <a href="https://t.me/your-telegram" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
+            <a href="https://t.me/+919318336747" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
               <TelegramIcon size={18} />
               <span className="sr-only">Telegram</span>
             </a>
